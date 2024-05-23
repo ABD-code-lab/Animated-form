@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    background: rgb(17, 17, 17);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-duration: 1s;
+}
+
+.container .box {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 40px;
+    z-index: 10;
+}
+
+.container:hover {
+    box-shadow: none;
+    transition-duration: 1s;
+    box-shadow: 0 0 2rem rgb(133, 133, 133);
+}
+
+.container .box h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.container .box button {
+    border: 0;
+    outline: 0;
+    font-weight: 500;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: black;
+}
+
+.formBx {
+    background-color: white;
+    width: 350px;
+    height: 480px;
+    position: absolute;
+    left: 40px;
+    z-index: 1000;
+    box-shadow: 0 5px 25px black;
+    transition: 1s;
+    transition-delay: 0s;
+    overflow: hidden;
+    border-radius: 10px
+}
+
+.slide {}
+
+.slide .formBx {
+    left: 410px;
+}
+
+.formBx .form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    background: #fffcf6;
+}
+
+.formBx .form.signupform {
+    top: 100%;
+}
+
+.slide .formBx .form.signupform {
+    top: 0%;
+    transition-delay: 0s;
+}
+
+.formBx .form.signinform {
+    top: 0;
+    transition: 1s;
+}
+
+.slide .formBx .form.signinform {
+    top: -100%;
+    transition-delay: 0s;
+}
+
+.formBx .form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.formBx .form form h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.formBx .form form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #fff8bb;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+}
+
+.formBx .form form input[type="submit"] {
+    background: rgb(17, 17, 17);
+    border: none;
+    outline: none;
+    max-width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+}
+
+.formBx .form.signupform form input[type="submit"] {
+    background: rgb(17, 17, 17);
+    color: white;
+}
+
+.btn-signup:hover {
+    box-shadow: none;
+    transition-duration: 0.5s;
+}
+
+.btn-signup {
+    box-shadow: 0 0 1rem #efeee5;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}

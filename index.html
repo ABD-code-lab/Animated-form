@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up | Sign-in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box signin">
+            <h2>Already have an account?</h2>
+            <button onclick="bbc()" class="btn-signup">Sign in</button>
+        </div>
+        <div class="box signup">
+            <h2>Don't have an accont?</h2>
+            <button onclick="abc()" class="btn-signup">Sign up</button>
+        </div>
+        <div class="formBx">
+            <div class="form signinform">
+                <form action="" method="get">
+                    <h3>Sign In</h3>
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="submit" value="Login">
+                    <a href="#" class="forgot">Forgot Password</a>
+                </form>
+            </div>
+
+            <div class="form signupform">
+                <form action="" method="get">
+                    <h3>Sign Up</h3>
+                    <input type="text" placeholder="Username" required>
+                    <input type="text" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <input type="submit" value="Register">
+                    <a href="#" class="forgot">Don't have an account?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
